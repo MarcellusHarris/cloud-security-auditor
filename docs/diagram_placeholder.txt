@@ -1,0 +1,4 @@
+This is a placeholder file for your architecture or workflow diagram.
+
+Replace this file with an image or diagram (e.g., PNG, SVG, or PDF) that
+illustrates how you use the Cloud Security Auditor in your environment.
