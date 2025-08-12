@@ -57,3 +57,10 @@ integrates into your environment.
 
 This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for
 details.
+
+
+## Audit Workflow Screenshot
+
+This project generates reports rather than visual dashboards, but here's a representative screenshot from a scan to illustrate the kind of output you might see:
+
+![C!oud Security Audit Screenshot](https://raw.githubusercontent.com/MarcellusHarris/automated-port-scanner/main/screenshot.png)
