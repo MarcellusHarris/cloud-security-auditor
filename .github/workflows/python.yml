@@ -1,0 +1,28 @@
+# GitHub Actions workflow to run tests and lint for Cloud Security Auditor
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install ruff pytest
+    - name: Lint with ruff
+      run: |
+        ruff .
+    - name: Test with pytest
+      run: |
+        pytest
